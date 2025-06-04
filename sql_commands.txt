@@ -1,0 +1,9 @@
+CREATE DATABASE social_posts_db;
+
+CREATE USER 'social_user'@'localhost' IDENTIFIED BY '!234Qwer';
+
+GRANT ALL PRIVILEGES ON social_posts_db.* TO 'social_user'@'localhost';
+
+FLUSH PRIVILEGES;
+
+EXIT;
